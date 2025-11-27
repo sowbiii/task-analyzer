@@ -1,0 +1,146 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+  padding: 20px;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #475569;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* PANELS */
+.panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  width: 430px;
+  animation: fadeIn 0.4s ease;
+}
+
+/* INPUT FORMS */
+.form-group {
+  margin-bottom: 12px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  font-size: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.primary {
+  background: #4f46e5;
+  color: white;
+}
+
+.primary:hover {
+  background: #4338ca;
+}
+
+.analyze {
+  background: #10b981;
+  color: #fff;
+}
+
+.analyze:hover {
+  background: #059669;
+}
+
+.controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* RESULT CARDS */
+.results-list .task-card {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0,0,0,0.05);
+  border-left: 5px solid #94a3b8;
+}
+
+.task-card h3 {
+  font-size: 18px;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.score {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.explanation {
+  font-size: 14px;
+  color: #475569;
+}
+
+/* PRIORITY COLORS */
+.high { border-left-color: #dc2626 !important; }
+.medium { border-left-color: #f59e0b !important; }
+.low { border-left-color: #2563eb !important; }
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
